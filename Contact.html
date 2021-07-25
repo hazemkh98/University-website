@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>University Website Desgin</title>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="Index.html"><img src="logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times-circle" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Course.html">Course</a></li>
+					<li><a href="Blog.html">Blog</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<h1>Contact Us</h1>
+
+	
+	</section>
+	<!------------------conact us content -------------------->
+	<section class="location">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681.868766710644!2d35.84158165795667!3d32.533156256580945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDMxJzU5LjQiTiAzNcKwNTAnMzMuNiJF!5e0!3m2!1sen!2sjo!4v1624837919227!5m2!1sen!2sjo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</section>
+
+
+	<section class="Contact-us">
+		<div class="row">
+			<div class="Contact-col">
+				<div>
+				<i class="fa fa-home" ></i>
+				<span>
+					<h5>Irbid Jordan, AL tabban street</h5>
+					<p>near to al najah hospital</p>
+				</span>
+				</div>
+
+				<div>
+				<i class="fa fa-phone" ></i>
+				<span>
+					<h5>+962 7968 33966</h5>
+					<p>Available: Sunday - thursday / 8:00-5:00</p>
+				</span>
+				</div>
+			
+				<div>
+				<i class="fa fa-envelope-o" ></i>
+				<span>
+					<h5>Hazemkh51@gmail.com</h5>
+					<p>Email us</p>
+				</span>
+				</div>
+			</div>
+
+			<div class="Contact-col">
+				<form action="form-handelr.php" method="post">
+					<input type="text" placeholder="Enter Your Name" name="name" required="">
+					<input type="Email" placeholder="Enter email address" name="email" required="">
+					<input type="text" placeholder="Enter Your Subject" name="subject" required="">
+					<textarea rows="8" placeholder="Message" name="message" required=""></textarea>
+					<button type="submit" class="hero-btn red-btn">Send Message</button>
+				</form>
+			</div>
+		
+	</section>
+
+	<!------------------Footer -------------------->
+	<section class="Footer">
+		<h4>About US</h4>
+		<p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br> It has survived not only five centuries, but also the leap into electronic typesetting</p>
+
+		<div class="icons">
+			<i class="fa fa-facebook" ></i>
+			<i class="fa fa-instagram" ></i>
+			<i class="fa fa-twitter" ></i>
+			<i class="fa fa-linkedin" ></i>
+		</div>
+		<p>Made with <i class="fa fa-heart-o" ></i> Hazem khasawneh</p>
+	</section>
+
+	<!------------------java script -------------------->
+<script>
+	var navLinks=document.getElementById("navLinks");
+
+	function showMenu() {
+		navLinks.style.right ="0";
+	}
+
+	function hideMenu() {
+		navLinks.style.right ="-200px";
+	}
+
+</script>
+
+</body>
+</html>
